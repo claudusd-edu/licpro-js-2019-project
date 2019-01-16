@@ -88,7 +88,7 @@ DELETE /api/episodes/C
 
 Request
 ```
-POST /api/episodes/A
+PUT /api/episodes/A
 ```
 
 ``` json
