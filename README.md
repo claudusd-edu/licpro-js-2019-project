@@ -81,7 +81,7 @@ Response
 
 Request
 ```
-DELETE /api/episodes
+DELETE /api/episodes/C
 ```
 
 ### Update en episode
