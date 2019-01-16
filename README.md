@@ -14,18 +14,27 @@ front
 
 ## API
 
+This api should respect the lofic with http code status.
+
+### List All
+
+Request
 ```
 GET /api/episodes
+```
+
+Response
+``` json
 
 [
   {
-    "id": "A"
+    "id": "A",
     "name": "The Big Bang Theory",
     "grade": 8,
     "code": "S01E01"
   },
   {
-    "id": "B"
+    "id": "B",
     "name": "The 100",
     "grade": 10,
     "code": "S01E01"
@@ -33,28 +42,63 @@ GET /api/episodes
 ]
 ```
 
+### List One
+Request
 ```
 GET /api/episodes/B
-
+```
+Reponse
+``` json
 {
-  "id": "A"
+  "id": "B",
   "name": "The 100",
   "grade": 10,
   "code": "S01E01"
 }
 ```
 
+### Create en episode
+
+Request
 ```
 POST /api/episodes
+```
+
+``` json
 {
-  "id": "A"
   "name": "The 100",
   "grade": 10,
   "code": "S01E01"
 }
+```
 
+Response
+``` json
 {"id": "C"}
 ```
+
+### Delete an episode
+
+Request
+```
+DELETE /api/episodes
+```
+
+### Update en episode
+
+Request
+```
+POST /api/episodes/A
+```
+
+``` json
+{
+  "name": "The 100",
+  "grade": 10,
+  "code": "S01E02"
+}
+```
+
 
 ## Storage V1
 
